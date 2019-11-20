@@ -1,0 +1,33 @@
+body {
+  background-color: bisque;
+}
+
+
+.boardTable {
+  width: 70%;
+  height: 300px;
+  border: 1px solid black;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cell {
+  border: 0.5px solid black;
+}
+
+.mine {
+  color:white;
+  background-image: url(../imgs/bomb.png);
+}
+
+/* .hidden {
+  opacity: 0%;
+} */
+
+.marked{
+background-color: red;
+}
+
+h1{
+  color:black;
+}
