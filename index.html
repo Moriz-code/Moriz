@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mine Sweeper - Mor Zeevi</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body oncontextmenu="return false" onload="initGame()">
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+  </head>
+  <body oncontextmenu="return false" onload="initGame()">
+    <div class="header">
     <h1>Mine Sweeper</h1>
+    <h2 class="feedBackTxt">Choose a level and click the smiley</h2>
+    <p class="redNote">note: don't forget to choose a level before!</p>
+   
+    <span class="shortestTime"></span>
     <div class="timer"></div>
-    <table  class="boardTable">
-        <tbody class="board">
-        </tbody>
-    </table>
-    
+    <p></p>
 
-<script src="Js/mineSweeper.js"></script>
-<script src="Js/util.js"></script>
-</body>
+    <div class="levelBtns"> 
+    <button class="levelBTN" value="1" onclick="updategLevel(this)"><img class="l1" src="./imgs/board.png"><br>Beginner</button>
+    <button class="levelBTN" value="2" onclick="updategLevel(this)"><img  class="l2"src="./imgs/board.png"><br>Medium</button>
+    <button class="levelBTN" value="3" onclick="updategLevel(this)"><img  class="l3" src="./imgs/board.png"><br>Expert</button>
+</div>
+    
+    <span class="life"></span>
+    <img class="smiley" src="./imgs/normal.png" onclick="startGame()">
+    <button class="hintsBTN" onclick="getHint(this)"><img  class="h1" src="./imgs/light-bulb.png"></button>
+    <button class="hintsBTN" onclick="getHint(this)"><img  class="h2"src="./imgs/light-bulb.png"></button>
+    <button class="hintsBTN" onclick="getHint(this)"><img  class="h3" src="./imgs/light-bulb.png"></button>
+    <table class="boardTable">
+
+        </div>
+      <tbody class="board"></tbody>
+    </table>
+
+    <script src="Js/mineSweeper.js"></script>
+    
+    <script src="Js/util.js"></script>
+  </body>
 </html>
