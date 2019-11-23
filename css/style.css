@@ -48,7 +48,7 @@ h1 {
 }
 
 .hintIndication {
-  background-color: #B8F2AE;
+  background-color:#B3E8AC;
 }
 
 .smiley {
@@ -108,6 +108,7 @@ h1 {
 }
 
 .timer {
+  margin-top:-15px;
   font-size: 30px;
   background-color: whitesmoke;
 }
@@ -122,4 +123,12 @@ height:30px;
 
 .hidden{
   opacity:0;
+}
+
+.feedBackTxt{
+margin-top:-20px;
+}
+
+.pickedSize{
+  background-color: whitesmoke;
 }
